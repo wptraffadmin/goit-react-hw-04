@@ -1,0 +1,22 @@
+.gallery {
+display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 376px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

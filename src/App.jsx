@@ -67,7 +67,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       <SearchBar onSubmit={handleSearch} />
       
       {error ? (
@@ -87,7 +87,7 @@ const App = () => {
         onRequestClose={closeModal}
         image={selectedImage}
       />
-    </div>
+    </>
   );
 };
 

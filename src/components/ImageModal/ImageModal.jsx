@@ -13,9 +13,9 @@ const ImageModal = ({ isOpen, onRequestClose, image }) => {
       {image && (
         <>
           <img src={image.urls.regular} alt={image.alt_description} />
-          <p>Author: {image.user.name}</p>
-          <p>Likes: {image.likes}</p>
-          {image.description && <p>Description: {image.description}</p>}
+          <p>Author<br />{image.user.name}</p>
+          <p>Likes<br />{image.likes}</p>
+          {image.description && <p>Description<br />{image.description}</p>}
         </>
       )}
     </ReactModal>
